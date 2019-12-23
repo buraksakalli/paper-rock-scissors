@@ -32,28 +32,26 @@ computerMove = () => {
 
 result = (winner, computer, player) => {
   if (winner == 'player') {
+    changeColor(player, 'win');
     win += 1;
     resultElement.innerText = 'You Won!';
     resultElement.classList = "span-result result-win";
     winElement.innerText = win;
-
-    changeColor(player, 'win');
+    
   }
   if (winner == 'computer') {
+    changeColor(player, 'lost');
     defeat += 1;
     resultElement.innerText = 'You Lost!';
     resultElement.classList = "span-result result-defeat";
     defeatElement.innerText = defeat;
-
-    changeColor(player, 'lost');
   }
   if (winner == null) {
+    changeColor(player, 'draw');
     resultElement.innerText = 'Draw';
     resultElement.classList = "span-result result-draw";
     draw += 1;
     drawElement.innerText = draw;
-
-    changeColor(player, 'draw');
   }
   computerElement.innerText = 'Computer chose ' + computer;
 }
