@@ -61,6 +61,9 @@ initial = () => {
   defeatElement.innerText = 0;
   drawElement.innerText = 0;
   resetButton.disabled = true;
+  resultElement.innerText = "";
+  computerElement.innerText = "";
+  resultElement.classList = "span-result";
 }
 
 initial();
