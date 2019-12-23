@@ -12,6 +12,7 @@ let scissorsElement = document.querySelector('#scissors');
 let win = 0, draw = 0, defeat = 0;
 
 moveElement.addEventListener('click', (e) => {
+  initialImage();
   resetButton.disabled = false;
   let player = e.target.getAttribute('data-key'); // Getting move of player
   let computer = computerMove(); // Getting move of computer
@@ -62,7 +63,6 @@ resetButton.addEventListener('click', (e) => {
 });
 
 changeColor = (player, status) => {
-  initialImage();
   if (status == 'win') {
     if (player == 'rock') {
       rockElement.src = './src/win/rock.png';
