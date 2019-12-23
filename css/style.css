@@ -77,8 +77,20 @@ html, body {
   border: 0;
 }
 
+.reset:hover {
+  box-shadow: 0 0 0 5px rgba(48, 51, 107,.2), 
+  0 0 0 10px rgba(48, 51, 107,.2)
+}
+
 .reset:enabled {
   color: #ecf0f1;
+}
+
+#paper:hover, #rock:hover, #scissors:hover {
+  border-radius: 100%;
+  border: 0px #394a5f;
+  box-shadow: 0 0 0 5px rgba(48, 51, 107,.2), 
+              0 0 0 10px rgba(48, 51, 107,.2)
 }
 
 @media only screen and (max-width: 800px) {
