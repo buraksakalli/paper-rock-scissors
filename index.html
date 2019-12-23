@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paper Rock Scissor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="title">Paper Rock Scissor</div>
+
+    <div class="move">
+      <img src="src/paper.png" class="img-move" alt="paper" data-key="paper" />
+      <img src="src/rock.png" class="img-move" alt="rock" data-key="rock" />
+      <img src="src/scissor.png" class="img-move" alt="scissor" data-key="scissors" />
+    </div>
+
+    <div class="container">
+      <span class="span-result"></span>
+      <span class="span-computer"></span>
+    </div>
+
+    <div class="score">
+      <div class="win">Your Victories
+        <div class="win-result"></div>
+      </div>
+      <div class="draw">Total Draw
+        <div class="draw-result"></div>
+      </div>
+      <div class="defeat">Your Defeates
+        <div class="defeat-result"></div>
+      </div>
+    </div>
+
+    <div class="restart">
+      <button class="reset">Reset Scores</button>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
